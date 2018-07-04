@@ -55,9 +55,11 @@ service:
     #### RDS engine to use
     #### (default: aurora)
     engine: mysql
-    instanceClass: db.t2.medium              
-    iamAuthentication: true                   
-    masterPassword: admin                    
+    
+    instanceClass: db.t2.small
+    iamAuthentication: false
+    masterUsername: admin
+
     allocatedStorage: 20
     #### Instance class
     #### (default: db.t2.small)

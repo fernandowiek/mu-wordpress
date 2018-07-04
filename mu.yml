@@ -55,12 +55,9 @@ service:
     #### RDS engine to use
     #### (default: aurora)
     engine: mysql
-
-    name: mydbname                            # Name of database to create on RDS instance
-    engine: mysql                            
     instanceClass: db.t2.medium              
     iamAuthentication: true                   
-    masterUsername: admin                    
+    masterPassword: admin                    
     allocatedStorage: 20
     #### Instance class
     #### (default: db.t2.small)
